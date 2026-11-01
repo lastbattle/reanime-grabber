@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Re:ANIME Grabber",
+  "version": "1.0.0",
+  "description": "Detect and download HLS streams from reanime.to.",
+  "permissions": ["tabs", "downloads"],
+  "host_permissions": ["http://*/*", "https://*/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://reanime.to/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": ["https://flixcloud.cc/d/*"],
+      "js": ["download-page.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Re:ANIME Grabber"
+  }
+}

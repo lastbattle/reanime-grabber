@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Re:ANIME Grabber</title>
+    <style>
+      body { width: 340px; margin: 0; padding: 12px; background: #111; color: #eee; font: 13px/1.45 system-ui, sans-serif; }
+      h1 { margin: 0 0 10px; font-size: 15px; }
+      .item { border: 1px solid #333; border-radius: 6px; padding: 9px; margin-bottom: 8px; background: #191919; }
+      .kind { color: #7dd3fc; font-size: 10px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; }
+      .url { margin: 4px 0 8px; max-height: 92px; overflow: auto; font: 10px/1.35 ui-monospace, monospace; color: #cbd5e1; overflow-wrap: anywhere; }
+      .row { display: flex; gap: 6px; }
+      button { flex: 1; border: 0; border-radius: 4px; padding: 6px; background: #2563eb; color: white; font-weight: 650; cursor: pointer; }
+      .ghost { background: #333; }
+      .empty { padding: 18px 0; color: #9ca3af; text-align: center; }
+      #status { min-height: 18px; margin-top: 6px; color: #86efac; }
+    </style>
+  </head>
+  <body>
+    <h1>Re:ANIME Grabber</h1>
+    <div id="streams"></div>
+    <div id="status"></div>
+    <script src="popup.js"></script>
+  </body>
+</html>

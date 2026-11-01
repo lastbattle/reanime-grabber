@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Re:ANIME Grabber",
   "version": "1.0.0",
-  "description": "Detect and download HLS streams from reanime.to.",
+  "description": "Download FlixCloud videos played on reanime.to.",
   "permissions": ["tabs", "downloads"],
   "host_permissions": ["http://*/*", "https://*/*"],
   "background": {
